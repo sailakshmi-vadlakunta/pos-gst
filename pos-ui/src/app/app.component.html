@@ -1,0 +1,22 @@
+<!-- <mat-sidenav class="mat-elevation-z8">POS</mat-sidenav>
+<button (click)="test()">test</button>
+<mat-sidenav-container class="example-container" >
+    <mat-sidenav  class="mat-elevation-z8" mode="side" opened="">
+        <mat-action-list>
+                <mat-list-item ><a class="nav-link" routerLink="category">Category</a></mat-list-item>
+                <mat-list-item>Product</mat-list-item>
+                <mat-list-item>Sales</mat-list-item>
+            </mat-action-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content mat-elevation-z8"><router-outlet></router-outlet></mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<mat-toolbar color="primary" class="navbar">
+    <div>POS</div>
+    <div>
+        <span class="nav-link" routerLink="category">Category</span>
+        <span class="nav-link" routerLink="product">Product</span>
+        <span class="nav-link" routerLink="sales">Sales</span>
+    </div>
+</mat-toolbar>
+<router-outlet></router-outlet>
